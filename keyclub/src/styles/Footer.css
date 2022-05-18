@@ -1,0 +1,25 @@
+.footer {
+  position: absolute;
+  display: flex;
+  background-color: rgb(44, 44, 44);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  height: 65px;
+}
+
+.footer > div {
+  padding: 20px 20px;
+}
+
+.credit {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.footer-logo {
+  font-family: "Montserrat", sans-serif;
+  color: gold;
+  font-size: 25px;
+  line-height: 25px;
+}

@@ -1,0 +1,51 @@
+.polls-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.polls-container-empty {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.past-polls-link {
+  text-decoration: none;
+  color: rgb(156, 156, 226);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.past-polls-link:hover {
+  color: rgb(121, 121, 223);
+}
+
+.past-polls-link-container {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.no-polls {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .polls-container {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .polls-container {
+    grid-template-columns: repeat(1, 400px);
+  }
+}

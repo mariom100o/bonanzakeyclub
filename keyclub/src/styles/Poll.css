@@ -1,0 +1,52 @@
+.poll {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  background-color: rgb(224, 224, 224);
+  width: 400px;
+  border-radius: 16px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+
+.result {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.result:hover {
+  padding-left: 20px;
+}
+
+.votes-count {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .poll {
+    width: 95vw;
+
+    margin: 0 auto;
+  }
+}

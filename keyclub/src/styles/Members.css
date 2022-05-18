@@ -1,0 +1,105 @@
+.members-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.members-container-empty {
+  justify-content: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pledge {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 50px;
+}
+
+.save-btn {
+  margin: 0 auto;
+  display: block;
+  background-color: transparent;
+  border: 1px solid lightgreen;
+  color: lightgreen;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px;
+  border-radius: 15px;
+  transition-duration: 250ms;
+}
+.save-btn:hover {
+  background-color: lightgreen;
+  color: black;
+}
+.edit-btn {
+  margin: 0 auto;
+  display: block;
+  background-color: transparent;
+  border: 1px solid lightblue;
+  color: lightblue;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px 25px;
+  border-radius: 15px;
+  transition-duration: 250ms;
+}
+
+.add-member-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-member-btn {
+  border: none;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
+}
+
+.add-member-btn:hover {
+  width: 150px;
+  height: 150px;
+}
+
+.edit-btn:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.no-members {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .members-container {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .members-container {
+    grid-template-columns: repeat(1, 400px);
+  }
+}

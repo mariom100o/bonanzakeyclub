@@ -1,0 +1,169 @@
+.label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.modal-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #242424;
+  color: white;
+}
+
+.radio-text {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  color: white;
+}
+
+.radio-btn {
+  background-color: gray;
+  float: left;
+  position: relative;
+}
+
+.submit-btn {
+  color: black;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 75%;
+  text-align: center;
+  padding: 15px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  border-radius: 15px;
+  transition-duration: 250ms;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  /* background: rgb(0, 68, 90); */
+  background: rgb(182, 156, 13);
+  color: black;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.auto-complete-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.auto-complete-results {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /*border: 1px solid white;*/
+  margin-top: -20px;
+  max-width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+  width: inherit;
+  z-index: 100;
+  box-shadow: 0px 15px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.auto-complete-result {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #3b3b3b;
+  border: 1px solid #3b3b3b;
+}
+
+.auto-complete-result-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+  padding: 10px 0px 10px 10px;
+  font-weight: 400;
+}
+
+.auto-complete-result:hover {
+  background-color: rgb(0, 68, 90);
+}
+
+.img-preview {
+  max-width: 25%;
+  transition-duration: 250ms;
+}
+
+/* When you hover on the map-preview, enlarge it to make it easier to see */
+.img-preview:hover {
+  transform: scale(2);
+}
+
+.confirm-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.delete-btn {
+  background: transparent;
+  border: 1px solid rgb(207, 76, 76);
+  color: rgb(207, 76, 76);
+  border-radius: 15px;
+  padding: 10px 20px;
+  transition-duration: 250ms;
+}
+.cancel-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  transition-duration: 250ms;
+}
+
+.delete-btn:hover {
+  background: rgb(207, 76, 76);
+  color: white;
+}
+.cancel-btn:hover {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .auto-complete-result-text {
+    font-size: 10px;
+    color: white;
+    padding: 7px 0px 10px 7px;
+  }
+}

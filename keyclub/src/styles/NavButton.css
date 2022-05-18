@@ -1,0 +1,30 @@
+.nav-btn {
+  display: block;
+  color: white;
+  background-color: transparent;
+  transition-duration: 250ms;
+  text-align: center;
+  padding: 25px 14px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+}
+
+.nav-btn:hover {
+  background-color: gold;
+  color: black;
+}
+
+.nav-btn.active {
+  background-color: gold;
+  color: black;
+}
+
+/* @media screen and (max-width: 950px) {
+  .nav-btn {
+    padding: 25px 50px;
+    z-index: 3;
+  }
+} */
